@@ -1,21 +1,17 @@
-N = int(input('Введіть ширину трикутника від 1 до 4: '))
-while not 1 <= N <= 4:
-    print('Не вірна ширина трикутника')
-    N = int(input('Введіть ширину трикутника від 1 до 4: '))
+N = int(input('Введіть ширину трикутника: '))
+print('#1')
+for i in range(N):
+    print('*' * (N - i))
+print('#2')
+for i in range(N):
+    print('*' * (i + 1))
+print('#3')
+for i in range(N):
+    print(f"{' ' * i}{'*' * (N - i)}")
+print('#4')
+for i in range(N):
+    print(f"{' ' * (N - (i + 1))}{'*' * (i+1)}")
 
-for i in range(5, -1, -1):
-    if N == 1:
-        print((i + 1) * "*")
-N = int(input('Введіть ширину трикутника від 1 до 4: '))
-for i in range(5):
-    if N == 2:
-        print((i + 1) * "*")
-N = int(input('Введіть ширину трикутника від 1 до 4: '))
-for i in range(4, -1, -1):
-    if N == 3:
-        print(f'{(i + 1) * "*" : >5}')
-N = int(input('Введіть ширину трикутника від 1 до 4: '))
-for i in range(5):
-    if N == 4:
-        print(f'{(i + 1) * "*" : >5}')
-N = int(input('Введіть ширину трикутника від 1 до 4: '))
+
+
+
